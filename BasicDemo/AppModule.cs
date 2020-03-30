@@ -24,7 +24,8 @@ namespace BasicDemo
 
             context.Services.AddMvc(options =>
                 options.EnableEndpointRouting = false
-            );
+            ).AddControllersAsServices();
+
             context.Services
                 .AddElsa()
                 .AddElsaDashboard();
